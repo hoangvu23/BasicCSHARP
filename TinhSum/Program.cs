@@ -6,7 +6,7 @@ Console.WriteLine("Hello, World!");
 var s = 0;
 for (int i = 0; i <= 3; i++) // ví dụ tổng từ 1 đến S = 1 +2 +3
 {
-    s = s + i; // nó thực hiện cộng truwóc rồi nó mới i ++ lên 1 đơn vị ?? hieur ko thấy chưa, s = 0 + 0 trước rồi nó mới cộng cộng lên
+    s = s + i; // nó thực hiện cộng truwóc rồi nó mới i ++ lên 1 đơn vị ?? hieur ko thấy chưa, s = 0 + 0 trước rồi nó mới cộng cộng lên, đây cũng thế 1+2 rồi nó mới tăng thêm 1 để cộng thêm 3, có nghĩa là thực hiện trc rồi tăng sau
 }
 Console.WriteLine("Tổng là = " + s); // cái chỗ này nỗi 
 Console.WriteLine("Tổng từ 1 đến {0}  là = {1}" , 100, s); // chỗ này là cách viết thay thế {0} là vị trí {0} n
@@ -45,10 +45,18 @@ var e = b + ++d; // e bằng mấy ? thế e 5 . sao lại bằng 5
 var g = 10;
 
 
-Console.WriteLine(g++); // mấy g = ? 10 +ok good
+Console.WriteLine(g++); // mấy g = ? 10 +ok good, cái này à 1 lần thực hiện rồi
 
-var z = 2 + g; // z = mấy
+var z = 2 + g; // z = mấy, ở đây nó tăng lên luôn 11
 
-Console.WriteLine(z);  // zbang mấy = 12
-Console.WriteLine(g); // g bằng mấy sau khi tính xoq z +1 =11 Ok
+Console.WriteLine(z);  // zbang mấy = 12 sai nhé vậy đây là 13
+Console.WriteLine(g); // g bằng mấy sau khi tính xoq z +1 =11 Ok thầy bịp vl :))) Hiểu chưa câu hỏi phỏng vấn đó
+// cứ nhớ mỗi lần thực hiện lệnh xong là nó tăng
+// Console là một lệnh mà cha :)) hiểu chưua okchwua. cái  ++i thì dễ hơn, tăng ngay lên dễ Ok, còn i++ nó hơi bịp tý
+
+
+// Hiểu chưa ok anh học js r , học r mà quên à
+// sau phỏng vấn có câu này chớ quên
+// i++ là cộng sau
+// ++i là cộng trước nghe chưa
 
